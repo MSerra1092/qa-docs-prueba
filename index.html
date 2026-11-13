@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Documentos de prueba · Custom &amp; Extended profiles</title>
+<style>
+body{font:15px/1.55 system-ui,sans-serif;max-width:980px;margin:32px auto;padding:0 18px;color:#1f2330;background:#fafafa}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:28px 0 8px}
+.sub{color:#5b6070;margin:0 0 18px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d9dce3;font-size:14px}
+th{background:#262a36;color:#fff;text-align:left;padding:8px}td{border-top:1px solid #e4e6eb;padding:8px;vertical-align:top}
+code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
+.card{background:#fff;border:1px solid #d9dce3;border-radius:8px;padding:12px 16px;margin:12px 0}
+@media (prefers-color-scheme:dark){body{background:#22252e;color:#e8e9ee}table,.card{background:#2c303b;border-color:#444a58}td{border-color:#444a58}code{background:#3a3f4c}.sub{color:#a8adbb}}
+</style></head><body>
+<h1>Documentos de prueba · Custom &amp; Extended profiles</h1>
+<p class="sub">Páginas para cargar como public link en perfiles Custom y Extended de Take Care. Producto ficticio "Lumora Notes"; no son políticas reales. Versión actual: <b>v1</b>.</p>
+
+<div class="card"><b>Cómo se usan.</b> Cada página es un documento "Terms of Service" con el mismo texto base y un caso límite distinto. Se carga la URL de cada página como public link (tipo Terms of Service u otro tipo libre) y se verifica qué texto extrae Take Care. Para los formatos PDF (con texto, escaneado y embebido) se parte del mismo texto base, así que un cambio de versión se valida igual en todos los formatos.</div>
+
+<h2>Páginas</h2>
+<table><thead><tr><th>URL</th><th>Caso</th><th>Caracteres del documento</th><th>Qué se espera / qué revisar</th></tr></thead><tbody>
+<tr><td><a href="01-semantico.html"><code>01-semantico.html</code></a></td><td>HTML semántico (h1, h2, p). Línea base.</td><td>1.536</td><td>Extrae título, fecha y las 8 secciones.</td></tr>
+<tr><td><a href="02-dom-anidado.html"><code>02-dom-anidado.html</code></a></td><td>Mismo texto en un DOM muy distinto: divs anidados, spans partidos, tabla de layout, sin encabezados.</td><td>1.536</td><td>Mismo texto que 01 (las frases partidas en dos spans deben quedar unidas).</td></tr>
+<tr><td><a href="03-colapsables.html"><code>03-colapsables.html</code></a></td><td>Secciones 1 a 4 en &lt;details&gt; cerrados; 5 a 9 en un acordeón JavaScript oculto.</td><td>1.684</td><td>¿Extrae el contenido colapsado? La sección "9. Hidden clause marker" solo existe oculta.</td></tr>
+<tr><td><a href="04-js-render.html"><code>04-js-render.html</code></a></td><td>El documento se inyecta con JavaScript 1,5 s después de cargar.</td><td>1.536</td><td>Si extrae "Loading…" o nada, el scraper no ejecuta JavaScript.</td></tr>
+<tr><td><a href="05-ruido.html"><code>05-ruido.html</code></a></td><td>Documento base con nav, banner de cookies, sidebar y footer. Un contador, la hora y un build id cambian en cada carga.</td><td>1.536</td><td>El ruido no debe entrar al documento ni generar cambios en el watch.</td></tr>
+<tr><td><a href="06-corto.html"><code>06-corto.html</code></a></td><td>Documento muy corto.</td><td>124</td><td>¿Lo acepta? ¿Lo marca como fallido o vacío?</td></tr>
+<tr><td><a href="07-limite-2500.html"><code>07-limite-2500.html</code></a></td><td>Exactamente 2.500 caracteres.</td><td>2.500</td><td>Extrae completo; termina en "…Additional provision".</td></tr>
+<tr><td><a href="08-largo.html"><code>08-largo.html</code></a></td><td>Documento largo con un marcador al final ("99. End of document marker").</td><td>5.656</td><td>Si el marcador no aparece, hay un corte por largo.</td></tr>
+<tr><td><a href="09-tabla-listas.html"><code>09-tabla-listas.html</code></a></td><td>Contenido dentro de una tabla con listas.</td><td>1.536</td><td>Mismo texto que 01, en orden.</td></tr>
+<tr><td><a href="10-redirect.html"><code>10-redirect.html</code></a></td><td>Redirige a 01 con meta refresh y JavaScript.</td><td>—</td><td>¿Sigue el redirect y extrae 01?</td></tr>
+<tr><td><a href="11-pdf-embebido.html"><code>11-pdf-embebido.html</code></a></td><td>PDF embebido en la página (se agrega cuando estén los PDF).</td><td>1.536</td><td>¿Extrae el texto del PDF embebido o solo el HTML?</td></tr>
+<tr><td><a href="12-iframe.html"><code>12-iframe.html</code></a></td><td>El documento 01 dentro de un iframe.</td><td>1.536</td><td>¿Extrae el contenido del iframe?</td></tr>
+</tbody></table>
+
+<h2>Plan de cambios (v2)</h2>
+<p>Los mismos cambios se aplican en todas las páginas y en todos los formatos PDF, para validar el watch con un único criterio:</p>
+<table><thead><tr><th>ID</th><th>Cambio</th><th>Esperado</th></tr></thead><tbody>
+<tr><td>C1</td><td>Título: "Lumora Notes Terms of Service" → "Lumora Notes Terms of Use".</td><td>Se detecta como cambio.</td></tr>
+<tr><td>C2</td><td>Fecha: "October 1, 2026" → "December 1, 2026".</td><td>Se detecta como cambio.</td></tr>
+<tr><td>C3</td><td>Sección 5: "renew automatically each month" → "renew automatically each year".</td><td>Se detecta como cambio.</td></tr>
+<tr><td>C4</td><td>Solo ruido: nav, footer y contadores de 05-ruido (sin tocar el documento).</td><td>No se detecta como cambio.</td></tr>
+</tbody></table>
+</body></html>
