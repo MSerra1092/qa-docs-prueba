@@ -29,9 +29,22 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 <tr><td><a href="08-largo.html"><code>08-largo.html</code></a></td><td>Documento largo con un marcador al final ("99. End of document marker").</td><td>5.656</td><td>Si el marcador no aparece, hay un corte por largo.</td></tr>
 <tr><td><a href="09-tabla-listas.html"><code>09-tabla-listas.html</code></a></td><td>Contenido dentro de una tabla con listas.</td><td>1.536</td><td>Mismo texto que 01, en orden.</td></tr>
 <tr><td><a href="10-redirect.html"><code>10-redirect.html</code></a></td><td>Redirige a 01 con meta refresh y JavaScript.</td><td>—</td><td>¿Sigue el redirect y extrae 01?</td></tr>
-<tr><td><a href="11-pdf-embebido.html"><code>11-pdf-embebido.html</code></a></td><td>PDF embebido en la página (se agrega cuando estén los PDF).</td><td>1.536</td><td>¿Extrae el texto del PDF embebido o solo el HTML?</td></tr>
+<tr><td><a href="11-pdf-embebido.html"><code>11-pdf-embebido.html</code></a></td><td>HTML vacío (sin texto visible) con el PDF con texto embebido (<code>pdf/lumora-tos-texto.pdf</code>).</td><td>0 en HTML · 1.536 en el PDF</td><td>¿Extrae el texto del PDF embebido? Si devuelve vacío, el scraper no sigue el &lt;embed&gt;.</td></tr>
 <tr><td><a href="12-iframe.html"><code>12-iframe.html</code></a></td><td>El documento 01 dentro de un iframe.</td><td>1.536</td><td>¿Extrae el contenido del iframe?</td></tr>
+<tr><td><a href="13-pdf-embebido-escaneado.html"><code>13-pdf-embebido-escaneado.html</code></a></td><td>HTML vacío (sin texto visible) con el PDF escaneado embebido (<code>pdf/lumora-tos-escaneado.pdf</code>, solo imagen, sin capa de texto).</td><td>0 en HTML · 1.536 en la imagen</td><td>Solo se puede leer con OCR. ¿Lo marca como vacío o fallido?</td></tr>
 </tbody></table>
+
+<h2>PDFs directos</h2>
+<p>Cada URL es fija y sirve la versión vigente (v2). Se pueden cargar directamente como public link.</p>
+<table><thead><tr><th>URL</th><th>Contenido</th><th>Qué revisar</th></tr></thead><tbody>
+<tr><td><a href="pdf/lumora-tos-texto.pdf"><code>pdf/lumora-tos-texto.pdf</code></a></td><td>Documento base, PDF con texto (1 página).</td><td>Mismo texto que 01.</td></tr>
+<tr><td><a href="pdf/lumora-tos-escaneado.pdf"><code>pdf/lumora-tos-escaneado.pdf</code></a></td><td>Documento base, PDF escaneado (imagen, sin texto).</td><td>Requiere OCR.</td></tr>
+<tr><td><a href="pdf/lumora-tos-corto-texto.pdf"><code>pdf/lumora-tos-corto-texto.pdf</code></a></td><td>Documento corto, PDF con texto.</td><td>Igual que 06 (sin sección 5).</td></tr>
+<tr><td><a href="pdf/lumora-tos-corto-escaneado.pdf"><code>pdf/lumora-tos-corto-escaneado.pdf</code></a></td><td>Documento corto, PDF escaneado.</td><td>Requiere OCR; texto mínimo.</td></tr>
+<tr><td><a href="pdf/lumora-tos-largo-texto.pdf"><code>pdf/lumora-tos-largo-texto.pdf</code></a></td><td>Documento largo, PDF con texto (3 páginas), con "99. End of document marker".</td><td>Igual que 08: si falta el marcador, hay un corte por largo.</td></tr>
+<tr><td><a href="pdf/lumora-tos-largo-escaneado.pdf"><code>pdf/lumora-tos-largo-escaneado.pdf</code></a></td><td>Documento largo, PDF escaneado (3 páginas).</td><td>Requiere OCR en las 3 páginas; el marcador está en la última.</td></tr>
+</tbody></table>
+<p>Los originales de cada versión están en <code>pdf/versiones/</code> (<code>lumora-{base,corto,largo}-{texto,escaneado}-{v1,v2}.pdf</code>). Para volver a v1, se copian los <code>-v1</code> sobre las URLs fijas de arriba.</p>
 
 <h2>Plan de cambios (v2)</h2>
 <p>Los mismos cambios se aplican en todas las páginas y en todos los formatos PDF, para validar el watch con un único criterio:</p>
