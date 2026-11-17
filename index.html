@@ -12,7 +12,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 @media (prefers-color-scheme:dark){body{background:#22252e;color:#e8e9ee}table,.card{background:#2c303b;border-color:#444a58}td{border-color:#444a58}code{background:#3a3f4c}.sub{color:#a8adbb}}
 </style></head><body>
 <h1>Documentos de prueba · Custom &amp; Extended profiles</h1>
-<p class="sub">Páginas para cargar como public link en perfiles Custom y Extended de Take Care. Producto ficticio "Lumora Notes"; no son políticas reales. Versión actual: <b>v3</b>.</p>
+<p class="sub">Páginas para cargar como public link en perfiles Custom y Extended de Take Care. Producto ficticio "Lumora Notes"; no son políticas reales. Versión actual: <b>v4</b>.</p>
 
 <div class="card"><b>Cómo se usan.</b> Cada página es un documento "Terms of Service" con el mismo texto base y un caso límite distinto. Se carga la URL de cada página como public link (tipo Terms of Service u otro tipo libre) y se verifica qué texto extrae Take Care. Para los formatos PDF (con texto, escaneado y embebido) se parte del mismo texto base, así que un cambio de versión se valida igual en todos los formatos.</div>
 
@@ -36,7 +36,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 </tbody></table>
 
 <h2>PDFs directos</h2>
-<p>Cada URL es fija y sirve la versión vigente (v3). Se pueden cargar directamente como public link.</p>
+<p>Cada URL es fija y sirve la versión vigente (v4). Se pueden cargar directamente como public link.</p>
 <table><thead><tr><th>URL</th><th>Contenido</th><th>Qué revisar</th></tr></thead><tbody>
 <tr><td><a href="pdf/lumora-tos-texto.pdf"><code>pdf/lumora-tos-texto.pdf</code></a></td><td>Documento base, PDF con texto (1 página).</td><td>Mismo texto que 01.</td></tr>
 <tr><td><a href="pdf/lumora-tos-escaneado.pdf"><code>pdf/lumora-tos-escaneado.pdf</code></a></td><td>Documento base, PDF escaneado (imagen, sin texto).</td><td>Requiere OCR.</td></tr>
@@ -47,7 +47,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 <tr><td><a href="pdf/lumora-tos-corto-realista-texto.pdf"><code>pdf/lumora-tos-corto-realista-texto.pdf</code></a></td><td>Documento corto realista, PDF con texto, sin marcas de prueba (tampoco en los metadatos).</td><td>Igual que 14.</td></tr>
 <tr><td><a href="pdf/lumora-tos-corto-realista-escaneado.pdf"><code>pdf/lumora-tos-corto-realista-escaneado.pdf</code></a></td><td>Documento corto realista, PDF escaneado (imagen, sin texto), sin marcas de prueba.</td><td>Requiere OCR; igual que 14.</td></tr>
 </tbody></table>
-<p>Los originales de cada versión están en <code>pdf/versiones/</code> (<code>lumora-{base,corto,largo}-{texto,escaneado}-{v1,v2,v3,v4}.pdf</code> y <code>lumora-corto-realista-{texto,escaneado}-{v1,v2,v3,v4}.pdf</code>). Hoy las URLs fijas tienen los <code>-v3</code>; para cambiar de versión, se copian los de la versión elegida sobre ellas. Las páginas HTML de v1 están en el tag <code>v1</code> del repo; la v1 de <code>14-corto-realista.html</code>, en el commit <code>ed43f99</code>. Las páginas 01–14 de v3 y v4 están en los tags <code>v3</code> y <code>v4</code>.</p>
+<p>Los originales de cada versión están en <code>pdf/versiones/</code> (<code>lumora-{base,corto,largo}-{texto,escaneado}-{v1,v2,v3,v4}.pdf</code> y <code>lumora-corto-realista-{texto,escaneado}-{v1,v2,v3,v4}.pdf</code>). Hoy las URLs fijas tienen los <code>-v4</code>; para cambiar de versión, se copian los de la versión elegida sobre ellas. Las páginas HTML de v1 están en el tag <code>v1</code> del repo; la v1 de <code>14-corto-realista.html</code>, en el commit <code>ed43f99</code>. Las páginas 01–14 de v3 y v4 están en los tags <code>v3</code> y <code>v4</code>.</p>
 
 <h2>Plan de cambios (v2)</h2>
 <p>Los mismos cambios se aplican en todas las páginas y en todos los formatos PDF, para validar el watch con un único criterio:</p>
@@ -58,7 +58,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 <tr><td>C4</td><td>Solo ruido: en 05-ruido, el contador, la hora y el build id cambian en cada carga; el nav y el footer no cambian entre versiones (sin tocar el documento).</td><td>No se detecta como cambio.</td></tr>
 </tbody></table>
 
-<h2>Plan de cambios v3 y v4 (vigente: v3; v4 preparada, sin publicar)</h2>
+<h2>Plan de cambios v3 y v4 (vigente: v4)</h2>
 <p>Se aplican sobre v2 en todas las páginas 01–14 y en los 8 PDF (con texto y escaneados). La 07b no cambia (es la copia congelada de v1).</p>
 <table><thead><tr><th>ID</th><th>Versión</th><th>Cambio</th><th>Esperado</th></tr></thead><tbody>
 <tr><td>C5</td><td>v3</td><td>Fecha: "December 1, 2026" → "February 1, 2027".</td><td>Se detecta como cambio.</td></tr>
