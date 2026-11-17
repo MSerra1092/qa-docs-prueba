@@ -24,6 +24,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 <tr><td><a href="04-js-render.html"><code>04-js-render.html</code></a></td><td>El documento se inyecta con JavaScript 1,5 s después de cargar.</td><td>1.536</td><td>Si extrae "Loading…" o nada, el scraper no ejecuta JavaScript.</td></tr>
 <tr><td><a href="05-ruido.html"><code>05-ruido.html</code></a></td><td>Documento base con nav, banner de cookies, sidebar y footer. Un contador, la hora y un build id cambian en cada carga.</td><td>1.536</td><td>El ruido no debe entrar al documento ni generar cambios en el watch.</td></tr>
 <tr><td><a href="06-corto.html"><code>06-corto.html</code></a></td><td>Documento muy corto.</td><td>124</td><td>¿Lo acepta? ¿Lo marca como fallido o vacío?</td></tr>
+<tr><td><a href="06b-corto-v1-original.html"><code>06b-corto-v1-original.html</code></a></td><td>Copia sin cambios de la 06 original de v1 (sigue con texto v1). Copia congelada.</td><td>124</td><td>¿Lo acepta? ¿Lo marca como fallido o vacío?</td></tr>
 <tr><td><a href="07-limite-2500.html"><code>07-limite-2500.html</code></a></td><td>Policy realista y breve (~1.000 caracteres), 7 secciones numeradas.</td><td>1.004</td><td>Se reconoce como términos de servicio y se extrae completa; termina en "7. Limitation of liability".</td></tr>
 <tr><td><a href="07b-limite-2500-original.html"><code>07b-limite-2500-original.html</code></a></td><td>Copia sin cambios de la 07 original de v1: exactamente 2.500 caracteres (sigue con texto v1). Sirve para reproducir un fallo de extracción.</td><td>2.500</td><td>Extrae completo; termina en "…Additional provision".</td></tr>
 <tr><td><a href="08-largo.html"><code>08-largo.html</code></a></td><td>Documento largo con un marcador al final ("99. End of document marker").</td><td>5.656</td><td>Si el marcador no aparece, hay un corte por largo.</td></tr>
@@ -59,7 +60,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 </tbody></table>
 
 <h2>Plan de cambios v3 y v4 (vigente: v4)</h2>
-<p>Se aplican sobre v2 en todas las páginas 01–14 y en los 8 PDF (con texto y escaneados). La 07b no cambia (es la copia congelada de v1).</p>
+<p>Se aplican sobre v2 en todas las páginas 01–14 y en los 8 PDF (con texto y escaneados). Las 06b y 07b no cambian (son copias congeladas de v1).</p>
 <table><thead><tr><th>ID</th><th>Versión</th><th>Cambio</th><th>Esperado</th></tr></thead><tbody>
 <tr><td>C5</td><td>v3</td><td>Fecha: "December 1, 2026" → "February 1, 2027".</td><td>Se detecta como cambio.</td></tr>
 <tr><td>C6</td><td>v4</td><td>Título: "Lumora Notes Terms of Use" → "Lumora Notes Terms and Conditions".</td><td>Se detecta como cambio.</td></tr>
