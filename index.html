@@ -12,7 +12,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 @media (prefers-color-scheme:dark){body{background:#22252e;color:#e8e9ee}table,.card{background:#2c303b;border-color:#444a58}td{border-color:#444a58}code{background:#3a3f4c}.sub{color:#a8adbb}}
 </style></head><body>
 <h1>Documentos de prueba · Custom &amp; Extended profiles</h1>
-<p class="sub">Páginas para cargar como public link en perfiles Custom y Extended de Take Care. Producto ficticio "Lumora Notes"; no son políticas reales. Versión actual: <b>v5</b>.</p>
+<p class="sub">Páginas para cargar como public link en perfiles Custom y Extended de Take Care. Producto ficticio "Lumora Notes"; no son políticas reales. Versión actual: <b>v6</b>.</p>
 
 <div class="card"><b>Cómo se usan.</b> Cada página es un documento "Terms of Service" con el mismo texto base y un caso límite distinto. Se carga la URL de cada página como public link (tipo Terms of Service u otro tipo libre) y se verifica qué texto extrae Take Care. Para los formatos PDF (con texto, escaneado y embebido) se parte del mismo texto base, así que un cambio de versión se valida igual en todos los formatos.</div>
 
@@ -37,7 +37,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 </tbody></table>
 
 <h2>PDFs directos</h2>
-<p>Cada URL es fija y sirve la versión vigente (v5). Se pueden cargar directamente como public link.</p>
+<p>Cada URL es fija y sirve la versión vigente (v6). Se pueden cargar directamente como public link.</p>
 <table><thead><tr><th>URL</th><th>Contenido</th><th>Qué revisar</th></tr></thead><tbody>
 <tr><td><a href="pdf/lumora-tos-texto.pdf"><code>pdf/lumora-tos-texto.pdf</code></a></td><td>Documento base, PDF con texto (1 página).</td><td>Mismo texto que 01.</td></tr>
 <tr><td><a href="pdf/lumora-tos-escaneado.pdf"><code>pdf/lumora-tos-escaneado.pdf</code></a></td><td>Documento base, PDF escaneado (imagen, sin texto).</td><td>Requiere OCR.</td></tr>
@@ -49,7 +49,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 <tr><td><a href="pdf/lumora-tos-corto-realista-texto.pdf"><code>pdf/lumora-tos-corto-realista-texto.pdf</code></a></td><td>Documento corto realista, PDF con texto, sin marcas de prueba (tampoco en los metadatos).</td><td>Igual que 14.</td></tr>
 <tr><td><a href="pdf/lumora-tos-corto-realista-escaneado.pdf"><code>pdf/lumora-tos-corto-realista-escaneado.pdf</code></a></td><td>Documento corto realista, PDF escaneado (imagen, sin texto), sin marcas de prueba.</td><td>Requiere OCR; igual que 14.</td></tr>
 </tbody></table>
-<p>Los originales de cada versión están en <code>pdf/versiones/</code> (<code>lumora-{base,corto,largo}-{texto,escaneado}-{v1,v2,v3,v4,v5}.pdf</code> y <code>lumora-corto-realista-{texto,escaneado}-{v1,v2,v3,v4,v5}.pdf</code>). El abrochado está en <code>lumora-largo-escaneado-abrochado-v5.pdf</code>. Hoy las URLs fijas tienen los <code>-v5</code>; para cambiar de versión, se copian los de la versión elegida sobre ellas. Las páginas HTML de v1 están en el tag <code>v1</code> del repo; la v1 de <code>14-corto-realista.html</code>, en el commit <code>ed43f99</code>. Las páginas 01–14 de v3 y v4 están en los tags <code>v3</code>, <code>v4</code> y <code>v5</code>.</p>
+<p>Los originales de cada versión están en <code>pdf/versiones/</code> (<code>lumora-{base,corto,largo}-{texto,escaneado}-{v1,v2,v3,v4,v5,v6}.pdf</code> y <code>lumora-corto-realista-{texto,escaneado}-{v1,v2,v3,v4,v5,v6}.pdf</code>). El abrochado está en <code>lumora-largo-escaneado-abrochado-{v5,v6}.pdf</code>. Hoy las URLs fijas tienen los <code>-v6</code>; para cambiar de versión, se copian los de la versión elegida sobre ellas. Las páginas HTML de v1 están en el tag <code>v1</code> del repo; la v1 de <code>14-corto-realista.html</code>, en el commit <code>ed43f99</code>. Las páginas 01–14 de v3 y v4 están en los tags <code>v3</code>, <code>v4</code>, <code>v5</code> y <code>v6</code>.</p>
 
 <h2>Plan de cambios (v2)</h2>
 <p>Los mismos cambios se aplican en todas las páginas y en todos los formatos PDF, para validar el watch con un único criterio:</p>
@@ -60,7 +60,7 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 <tr><td>C4</td><td>Solo ruido: en 05-ruido, el contador, la hora y el build id cambian en cada carga; el nav y el footer no cambian entre versiones (sin tocar el documento).</td><td>No se detecta como cambio.</td></tr>
 </tbody></table>
 
-<h2>Plan de cambios v3, v4 y v5 (vigente: v5)</h2>
+<h2>Plan de cambios v3, v4, v5 y v6 (vigente: v6)</h2>
 <p>Se aplican sobre v2 en todas las páginas 01–14 y en los 8 PDF (con texto y escaneados). Las 06b y 07b no cambian (son copias congeladas de v1).</p>
 <table><thead><tr><th>ID</th><th>Versión</th><th>Cambio</th><th>Esperado</th></tr></thead><tbody>
 <tr><td>C5</td><td>v3</td><td>Fecha: "December 1, 2026" → "February 1, 2027".</td><td>Se detecta como cambio.</td></tr>
@@ -68,5 +68,6 @@ code{font-size:13px;background:#eef0f4;padding:1px 4px;border-radius:4px}
 <tr><td>C7</td><td>v4</td><td>Sección 1: "agree to these Terms of Service" → "agree to these Terms" (solo en la sección 1; el relleno de la 08 no cambia; la 07, la 06 y la 14 no tienen esa frase).</td><td>Se detecta como cambio.</td></tr>
 <tr><td>C8</td><td>v5</td><td>Fecha: "February 1, 2027" → "March 1, 2027".</td><td>Se detecta como cambio.</td></tr>
 <tr><td>C9</td><td>v5</td><td>Sección 4 (Acceptable use): "distribute malware" → "distribute malware or send unsolicited messages" (solo en la sección 4; el relleno de la 08 no cambia; la 06 y la 14 no tienen sección 4, y la 07 dice "distribute malicious code").</td><td>Se detecta como cambio.</td></tr>
+<tr><td>C10</td><td>v6</td><td>Sección 6 (Termination): "for 30 days" → "for 60 days" (solo en la sección 6, también en el abrochado; el relleno de la 08 y de las páginas 2–3 del largo no cambia; la 06 y la 14 no tienen sección 6, y la sección 6 de la 07 no tiene esa frase).</td><td>Se detecta como cambio.</td></tr>
 </tbody></table>
 </body></html>
