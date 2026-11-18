@@ -8,7 +8,7 @@
 <script>
 // Solo para personas: si la ruta es /vN/archivo y la versión N no existe, ir a la última versión del mismo archivo.
 // El status HTTP sigue siendo 404 (lo que recibe un scraper).
-(function(){var LAST=7;var m=location.pathname.match(/^(.*?\/)v(\d+)\/(.+)$/);
+(function(){var LAST=8;var m=location.pathname.match(/^(.*?\/)v(\d+)\/(.+)$/);
 if(m&&(+m[2]<1||+m[2]>LAST)){location.replace(m[1]+'v'+LAST+'/'+m[3]+location.search+location.hash);}})();
 </script>
 </main>
