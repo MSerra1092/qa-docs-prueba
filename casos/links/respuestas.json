@@ -1,0 +1,424 @@
+{
+ "documento": "Lumora Notes Terms and Conditions",
+ "paginas": 2,
+ "texto_esperado": "Lumora Notes Terms and Conditions\nEffective date: March 1, 2027\n1. Acceptance of these terms\nBy creating an account or using Lumora Notes you agree to these Terms and to our Privacy Policy,\nwhich explains how we collect and use personal data. If you use the service on behalf of a company,\nyou confirm that you can bind that company to these terms.\n2. Your content\nData Processing Agreement customers keep all rights to the notes, files and comments they upload.\nYou grant us a limited, non-exclusive license to store, process and display your content only to provide\nthe service to you and the people you share it with, as described in the Content License Addendum and\nits schedule of permitted processing.\n3. Use of artificial intelligence\nSome features use machine learning models to summarize or classify your notes. We do not use your\ncontent to train general models unless you opt in from Settings > Privacy. Before enabling these\nfeatures, read the AI Transparency Notice and the Model Cards that describe each model.\n4. Acceptable use\nYou may not use the service to break the law, infringe the rights of others, distribute malware or send\nunsolicited messages. The full list of prohibited conduct is in the Acceptable Use Policy, which forms\npart of these terms. You can report abuse through the Trust and Safety Center or from the menu of any\nshared note.\n5. Fees and renewals\nPaid plans renew automatically each year. You can cancel at any time and the plan stays active until\nthe end of the current billing period. Fees are not refundable except where the law requires it; see the\nRefund Policy, regional pricing table and the Tax Calculation Guide (PDF, 2 pages) for details.\n6. Termination\nWe may suspend accounts that breach these terms after giving notice when possible. You can export\nyour content for up to 60 days after your account has been closed through the self-service ad-\nministration console or by asking your workspace owner.\n7. Changes to these terms\nWe will notify you at least 30 days before material changes take effect, by email and through a notice\npublished on the Lumora Notes status page together with a summary of what changed, why it changed\nand when the new version applies. Continued use after that date means you accept the new terms.\nPrevious versions of these terms remain available for reference in the archive of earlier Terms and\nConditions, ordered by effective date.\n8. Contact\nQuestions about these terms can be sent to the Lumora Notes legal team through the in-app help center.",
+ "links": [
+  {
+   "id": "L01",
+   "texto_ancla": "Privacy Policy",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L01",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "En medio de la línea, una sola línea, estilo normal.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 4,
+     "texto": "Privacy Policy",
+     "rect": [
+      447.0,
+      647.2,
+      511.5,
+      659.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "texto_ancla": "Data Processing Agreement",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L02",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Al comienzo del párrafo (inicio de línea).",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 8,
+     "texto": "Data Processing Agreement",
+     "rect": [
+      78,
+      578.8,
+      200.8,
+      590.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "texto_ancla": "Content License Addendum and its schedule of permitted processing",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L03",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 2,
+   "anotaciones": "2 (una por línea)",
+   "caso": "Cortado en dos líneas; una anotación por línea. Termina en punto.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 10,
+     "texto": "Content License Addendum and",
+     "rect": [
+      389.0,
+      549.8,
+      531.1,
+      561.9
+     ]
+    },
+    {
+     "pagina": 1,
+     "linea": 11,
+     "texto": "its schedule of permitted processing",
+     "rect": [
+      78,
+      535.2,
+      236.3,
+      547.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "texto_ancla": "Settings > Privacy",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L04",
+   "estilos": [
+    "Times-Bold 11",
+    "Times-Italic 11",
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Un solo link con tres estilos dentro: negrita, normal (\" > \") e itálica.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 14,
+     "texto": "Settings > Privacy",
+     "rect": [
+      318.8,
+      481.2,
+      401.9,
+      493.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "texto_ancla": "AI Transparency Notice",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L05",
+   "estilos": [
+    "Times-Bold 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Negrita.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 15,
+     "texto": "AI Transparency Notice",
+     "rect": [
+      156.2,
+      466.8,
+      269.8,
+      478.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "texto_ancla": "Model Cards",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L06",
+   "estilos": [
+    "Times-Italic 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Itálica, en la misma línea que L05 (dos links separados por \"and the\").",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 15,
+     "texto": "Model Cards",
+     "rect": [
+      307.4,
+      466.8,
+      365.1,
+      478.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "texto_ancla": "Acceptable Use Policy",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L07",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Dentro de un párrafo justificado (espacios estirados, cada palabra posicionada).",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 18,
+     "texto": "Acceptable Use Policy",
+     "rect": [
+      370.9,
+      412.8,
+      472.2,
+      424.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "texto_ancla": "Refund Policy",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L08",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Seguido de coma y de otro link (L09).",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 24,
+     "texto": "Refund Policy",
+     "rect": [
+      78,
+      315.2,
+      141.2,
+      327.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "texto_ancla": "regional pricing table",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L09",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Segundo link de una lista de tres en la misma frase.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 24,
+     "texto": "regional pricing table",
+     "rect": [
+      146.8,
+      315.2,
+      240.8,
+      327.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "texto_ancla": "Tax Calculation Guide (PDF, 2 pages)",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L10",
+   "estilos": [
+    "Helvetica 9"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Otra fuente y otro tamaño (Helvetica 9) dentro de un párrafo en Times 11.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 24,
+     "texto": "Tax Calculation Guide (PDF, 2 pages)",
+     "rect": [
+      278.4,
+      315.8,
+      430.4,
+      325.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "texto_ancla": "self-service administration console",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L11",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 2,
+   "anotaciones": "2 (una por línea)",
+   "caso": "Palabra cortada con guion al final de la línea (\"ad-\" / \"ministration\").",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 27,
+     "texto": "self-service ad-",
+     "rect": [
+      421.1,
+      261.2,
+      488.6,
+      273.4
+     ]
+    },
+    {
+     "pagina": 1,
+     "linea": 28,
+     "texto": "ministration console",
+     "rect": [
+      78,
+      246.8,
+      167.5,
+      258.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "texto_ancla": "a notice published on the Lumora Notes status page together with a summary of what changed, why it changed and when the new version applies",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L12",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 3,
+   "anotaciones": "1 con /QuadPoints",
+   "caso": "Link largo en tres líneas con UNA sola anotación con /QuadPoints.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 30,
+     "texto": "a notice",
+     "rect": [
+      490.4,
+      207.2,
+      524.9,
+      219.3
+     ]
+    },
+    {
+     "pagina": 1,
+     "linea": 31,
+     "texto": "published on the Lumora Notes status page together with a summary of what changed, why it changed",
+     "rect": [
+      78,
+      192.8,
+      528.6,
+      204.8
+     ]
+    },
+    {
+     "pagina": 1,
+     "linea": 32,
+     "texto": "and when the new version applies",
+     "rect": [
+      78,
+      178.2,
+      226.8,
+      190.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L13",
+   "texto_ancla": "archive of earlier Terms and Conditions",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L13",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 2,
+   "anotaciones": "2 (una por línea)",
+   "caso": "Cortado por salto de página: empieza al final de la página 1 y sigue en la página 2.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 33,
+     "texto": "archive of earlier Terms and",
+     "rect": [
+      385.6,
+      156.8,
+      510.2,
+      168.8
+     ]
+    },
+    {
+     "pagina": 2,
+     "linea": 1,
+     "texto": "Conditions",
+     "rect": [
+      78,
+      717.2,
+      126.3,
+      729.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L14",
+   "texto_ancla": "in-app help center",
+   "url": "https://mserra1092.github.io/qa-docs-prueba/casos/links/destinos.html#L14",
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "1 (una por línea)",
+   "caso": "Al final del documento, seguido de punto.",
+   "fragmentos": [
+    {
+     "pagina": 2,
+     "linea": 3,
+     "texto": "in-app help center",
+     "rect": [
+      451.0,
+      677.8,
+      530.5,
+      689.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "N01",
+   "texto_ancla": "Trust and Safety Center",
+   "url": null,
+   "estilos": [
+    "Times-Roman 11"
+   ],
+   "lineas": 1,
+   "anotaciones": "ninguna (señuelo)",
+   "caso": "Señuelo: azul y subrayado pero SIN link. No debe reportarse como link en los PDF con texto.",
+   "fragmentos": [
+    {
+     "pagina": 1,
+     "linea": 19,
+     "texto": "Trust and Safety Center",
+     "rect": [
+      317.1,
+      398.2,
+      422.6,
+      410.4
+     ]
+    }
+   ]
+  }
+ ]
+}
